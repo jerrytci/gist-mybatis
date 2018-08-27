@@ -9,13 +9,6 @@ import org.remix.ssm.domain.UserEntity;
 import java.util.List;
 
 public interface UserMapper {
-	//	private int id;
-//	private String account;
-//	private String password;
-//	private String name;
-//	private int age;
-//	private int phone;
-//	private String wechat;
 	@Insert("insert into user(name, age) values(#{name}, #{age})")
 	public int insertUser(UserEntity userEntity);
 
