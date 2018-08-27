@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="/static/jslib/layui-v2.0.2/layui/css/layui.css">
 </head>
 <body>
+<cite>index</cite>
 
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="/static/jslib/layui-v2.0.2/layui/layui.js"></script>
+<script src="/static/jsutil/log/debugout.js"></script>
+
+<script>
+  layui.use(['laypage', 'layedit'], function(){
+    var laypage = layui.laypage
+      ,layedit = layui.layedit;
+
+    //do something
+  });
+
+  var d = new debugout();
+
+  /*$.ajax({
+    type: "get",
+    url: "/index",
+    success: function (result) {
+      alert(result);
+      d.console(result);
+    },
+    error: function (error) {
+      alert(error.msg);
+    }
+  });*/
+</script>
 </body>
-<script type="text/javascript" src="js/6.2创建对象.js"></script>
 </html>
